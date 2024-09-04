@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrevistas</title>
     <link rel="stylesheet" href="css/style-entevistas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
+    <button id="audio-button">
+        <img id="audio-icon" src="img/botaoaudio.png" alt="Play Audio">
+    </button>
+
+    <audio id="page-audio">
+        <source src="img/HINO DO CRUZEIRO - golaudio (youtube).mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag audio
+    </audio>
+    
     <header>
         <div class="logo">
             <h1>Entrevistas</h1>
@@ -21,17 +33,68 @@
     </main>
 
     <div class="entrevista1">
-        <a href="entrevista1.html"><img src="img/youtube-logo.png" alt="" width="300px"></a>
-        <p><b><a href="entrevista1.html">Entrevista com o profissional</a></b></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aeJzEJ8pcXg?si=gEKeLaecGeCA-P8j"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h3>Entrevista com profissional</h3>
+        <p>Acompanhe acima a entrevista com o ... onde contará detalhes sobre <br>sua carreira de designer.</p>
     </div>
 
     <div class="entrevista2">
-        <a href="entrevista2.html"><img src="img/youtube-logo.png" alt="" width="300px"></a>
-        <p><b><a href="entrevista2.html">Entrevista com o graduando</a></b></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aeJzEJ8pcXg?si=gEKeLaecGeCA-P8j"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h3>Entrevista com aluno</h3>
+        <p>Acompanhe acima a entrevista com o ... onde contará detalhes sobre <br>seu curso de designer.</p>
+    </div>
+
+    <div class="container">
+        <nav class="menu">
+            <input type="checkbox" name="menucircular" id="menucircular" class="menucircular">
+            <label for="menucircular" class="menu-btn">
+                <spam class="linha linha-1"></spam>
+                <spam class="linha linha-2"></spam>
+                <spam class="linha linha-3"></spam>
+            </label>
+            <a href="index.html" class="menu-a ai-1">
+                <i class="fa fa-home"></i>
+            </a>
+            <a href="profissoes.html" class="menu-a ai-2">
+                <i class="fas fa-laptop"></i>
+            </a>
+            <a href="entrevistas.html" class="menu-a ai-3">
+                <i class="fa-sharp fa-solid fa-circle-play"></i>
+            </a>
+            <a href="cursos.html" class="menu-a ai-4">
+                <i class="fa-solid fa-square-pen"></i>
+            </a>
+            <a href="equipe.html" class="menu-a ai-5">
+                <i class="fa-sharp fa-solid fa-users"></i>
+            </a>
     </div>
 
     <footer id="rodape">
         <img src="img/onda.png" width="1900px" height="200px">
     </footer>
+
+    <button id="showVideoBtn" class="video-button">
+        <img src="img/mascote.png.png" alt="Play Video">
+    </button>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video autoplay width="100%">
+                <source src="202409041103.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
