@@ -256,3 +256,13 @@ main {
     width: 90%;
     text-align: center;
 }
+
+#audio-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+}
+#audio-button img{
+    height: 50px;
+}
