@@ -12,6 +12,8 @@ body {
     text-align: left;
     padding: 20px;
     height: 100vh;
+    overflow-y: hidden;
+
 }
 
 header {
@@ -69,12 +71,6 @@ main {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
-}
-
-footer {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
 }
 
 .audio-button {
@@ -273,10 +269,11 @@ footer {
     background-color: white;
     color: black;
 }
-/*rodape */
- #rodape{ 
-    position: absolute;
+#rodape {
     bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
 }
 
 /* Div que posiciona a bolha no canto inferior direito */
@@ -310,5 +307,6 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     display: none; /* Inicialmente escondido */
+    mix-blend-mode: multiply;
 }
 

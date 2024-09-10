@@ -290,6 +290,7 @@ main {
     border-radius: 50%;
     object-fit: cover;
     display: none; /* Inicialmente escondido */
+    mix-blend-mode: multiply;
 }
 
 #icon{

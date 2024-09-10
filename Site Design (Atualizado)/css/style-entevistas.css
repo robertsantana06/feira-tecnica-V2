@@ -62,11 +62,12 @@ main {
     font-weight: bold;
 }
 
-#rodape{ 
-    position: absolute;
+#rodape {
     bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
 }
-
 .menu{
     bottom: 0;
     margin: auto;
@@ -257,7 +258,7 @@ main {
 .entrevista2{
     left: 50%;
     top: 50%;
-    transform: translate(5%, -40%);
+    transform: translate(-25%, -80%);
     position: absolute;
 }
 
@@ -296,6 +297,7 @@ p{
     border-radius: 50%;
     object-fit: cover;
     display: none; /* Inicialmente escondido */
+    mix-blend-mode: multiply;
 }
 
 
