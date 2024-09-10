@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevistas</title>
+    <link rel="stylesheet" href="css/style-entevistas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/web-design.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/entrevistas-icon-removebg-preview.png" alt="" width="50px" height="50px" id="icon">
+            <h1>Entrevistas</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="highlight">
+                <h3>Clique no link abaixo para ser redirecionado às entrevistas:</h3>
+            </div>
+    </main>
+
+    <div class="entrevista1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UKUplJWkw8k?si=h40dpO7VQQlmq7uY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h3>Entrevista com profissional</h3>
+        <p>Acompanhe acima a entrevista com o Diego, profissonal de design, onde <br>contará detalhes sobre sua carreira
+            de designer.</p>
+    </div>
+
+    <div class="entrevista2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2pwfUzoeeqg?si=LD4UOOMVUpJwgtG8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h3>Entrevista com graduando</h3>
+        <p>Acompanhe acima a entrevista com o Felipe onde contará detalhes sobre <br>seu curso de designer.</p>
+    </div>
+
+    <div class="container">
+        <nav class="menu">
+            <input type="checkbox" name="menucircular" id="menucircular" class="menucircular">
+            <label for="menucircular" class="menu-btn">
+                <spam class="linha linha-1"></spam>
+                <spam class="linha linha-2"></spam>
+                <spam class="linha linha-3"></spam>
+            </label>
+            <a href="index.html" class="menu-a ai-1">
+                <i class="fa fa-home"></i>
+            </a>
+            <a href="profissoes.html" class="menu-a ai-2">
+                <i class="fas fa-laptop"></i>
+            </a>
+            <a href="entrevistas.html" class="menu-a ai-3">
+                <i class="fa-sharp fa-solid fa-circle-play"></i>
+            </a>
+            <a href="cursos.html" class="menu-a ai-4">
+                <i class="fa-solid fa-book-open"></i>
+            </a>
+            <a href="equipe.html" class="menu-a ai-5">
+                <i class="fa-sharp fa-solid fa-users"></i>
+            </a>
+    </div>
+
+    <div id="bubble">
+        <!-- A imagem e o vídeo do mascote são colocados dentro da bolha -->
+        <img id="mascotImage" src="img/mascote.png.png" alt="Mascote">
+        <video id="mascotVideo" autoplay muted>
+            <source src="img/mascote.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+        <audio id="mascotAudio">
+            <source src="audio/entrevista.mpeg" type="audio/mpeg">
+            Seu navegador não suporta o formato de áudio.
+        </audio>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
